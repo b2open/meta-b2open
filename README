@@ -1,0 +1,63 @@
+# meta-b2open
+
+Layer Yocto Project with new recipes and bbappends to Qt, Python and images
+
+This README file contains information on the contents of the
+b2open layer.
+
+Please see the corresponding sections below for details.
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: krogoth
+
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: krogoth
+
+
+Patches
+=======
+
+Please submit any patches against the b2open layer to:
+
+Maintainer: Cleiton Bueno <cleiton.bueno@b2open.com>
+
+
+Table of Contents
+=================
+
+  I. Adding the b2open layer to your build
+ II. Misc
+
+
+I. Adding the b2open layer to your build
+=================================================
+
+--- replace with specific instructions for the b2open layer ---
+
+In order to use this layer, you need to make the build system aware of
+it.
+
+Assuming the b2open layer exists at the top-level of your
+yocto build tree, you can add it to the build system by adding the
+location of the b2open layer to bblayers.conf, along with any
+other layers needed. e.g.:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-poky \
+    /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-b2open \
+    "
+
+
+II. Misc
+========
+
+--- replace with specific information about the b2open layer ---
