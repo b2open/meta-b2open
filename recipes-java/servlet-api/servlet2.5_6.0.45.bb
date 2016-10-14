@@ -17,7 +17,6 @@ SRC_URI = "\
 "
 
 
-# S = "${WORKDIR}/apache-tomcat-${PV}-src/servletapi/jsr154"
 S = "${WORKDIR}/apache-tomcat-${PV}"
 
 
@@ -28,12 +27,6 @@ INITSCRIPT_NAME = "tomcat6"
 INITSCRIPT_PARAMS = "defaults 85"
 
 
-# Variavel webserver Tomcat
-#WS_TOMCAT = "webserverjava"
-
-
-# TOMCAT_SRC = "${WORKDIR}/apache-tomcat-${PV}-src"
-#FILES_${PN} += " /sat /sat/init /sat/${WS_TOMCAT} /sat/${WS_TOMCAT}/logs "
 FILES_${PN} += "\
   ${sysconfdir} \
   ${sysconfdir}/tomcat6 \
