@@ -1,0 +1,2 @@
+Common targets are:
+    ippbx-image                   # Production Image

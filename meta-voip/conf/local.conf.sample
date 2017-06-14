@@ -1,0 +1,84 @@
+#
+# Set Machine
+#
+MACHINE ?= "colibri-imx6"
+
+
+# Accept EULA layer FSL 
+ACCEPT_FSL_EULA = "1"
+
+
+#
+# Remove x11 wayland between others
+#
+DISTRO_FEATURES_remove = "x11 wayland nfc bluetooth irda"
+
+
+#
+# Where to place downloads
+#
+DL_DIR ?= "${TOPDIR}/../downloads"
+
+
+#
+# Where to place shared-state files
+#
+SSTATE_DIR ?= "${TOPDIR}/sstate-cache"
+
+
+#
+# Where to place the build output
+#
+TMPDIR = "${TOPDIR}/tmp"
+
+
+#
+# Default policy config
+#
+DISTRO ?= "poky"
+
+
+#
+# Package Management configuration
+#
+PACKAGE_CLASSES ?= "package_ipk"
+
+
+#
+# Extra image configuration defaults
+#
+EXTRA_IMAGE_FEATURES ?= "debug-tweaks package-management"
+
+
+#
+# Additional image features
+#
+USER_CLASSES ?= "buildstats image-mklibs"
+
+
+#
+# Interactive shell configuration
+#
+PATCHRESOLVE = "noop"
+
+
+#
+## Remove work package in done
+#
+#INHERIT += "rm_work"
+
+
+#
+# Disk Space Monitoring during the build
+#
+BB_DISKMON_DIRS = "\
+                   STOPTASKS,${TMPDIR},1G,100K \
+                   STOPTASKS,${DL_DIR},1G,100K \
+                   STOPTASKS,${SSTATE_DIR},1G,100K \
+                   STOPTASKS,/tmp,100M,100K \
+                   ABORT,${TMPDIR},100M,1K \
+                   ABORT,${DL_DIR},100M,1K \
+                   ABORT,${SSTATE_DIR},100M,1K \
+                   ABORT,/tmp,10M,1K"
+
+CONF_VERSION = "1"

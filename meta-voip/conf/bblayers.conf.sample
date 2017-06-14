@@ -1,0 +1,19 @@
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+             ${TOPDIR}/../meta \
+             ${TOPDIR}/../meta-poky \
+             ${TOPDIR}/../meta-b2open/meta-voip \
+             ${TOPDIR}/../meta-oe/meta-oe \
+             ${TOPDIR}/../meta-oe/meta-python \
+             ${TOPDIR}/../meta-oe/meta-networking \
+             ${TOPDIR}/../meta-yocto-bsp \
+             ${TOPDIR}/../meta-fsl-arm \
+             ${TOPDIR}/../meta-fsl-arm-extra \
+             ${TOPDIR}/../meta-telephony \
+             "
