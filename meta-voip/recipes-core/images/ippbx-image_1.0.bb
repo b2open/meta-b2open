@@ -7,8 +7,8 @@ IMAGE_FEATURES += "\
 # Packages and tools
 IMAGE_INSTALL += "\
   util-linux procps base-files \
-  asterisk libgsm tcpdump \
-  htop lsof minicom nano less \
+  asterisk libgsm \
+  htop lsof nano \
   "
 
 # Add space final image +250M
