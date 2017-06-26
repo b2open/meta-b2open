@@ -1,0 +1,4 @@
+#! /bin/sh
+
+export TEMPLATECONF=${PWD}/poky-krogoth/meta-b2open/meta-voip/conf
+source ${PWD}/poky-krogoth/oe-init-build-env build-ippbx
