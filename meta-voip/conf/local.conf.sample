@@ -4,7 +4,15 @@
 MACHINE ?= "colibri-imx6"
 
 
+#
+# Ignore check/compile recipes where (.bbappend) has no corresponding recipe file .bb 
+#
+BB_DANGLINGAPPENDS_WARNONLY = "1"
+
+
+#
 # Accept EULA layer FSL 
+#
 ACCEPT_FSL_EULA = "1"
 
 

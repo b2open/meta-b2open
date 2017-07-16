@@ -6,14 +6,14 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-             ${TOPDIR}/../meta \
-             ${TOPDIR}/../meta-poky \
-             ${TOPDIR}/../meta-b2open/meta-voip \
-             ${TOPDIR}/../meta-oe/meta-oe \
-             ${TOPDIR}/../meta-oe/meta-python \
-             ${TOPDIR}/../meta-oe/meta-networking \
-             ${TOPDIR}/../meta-yocto-bsp \
-             ${TOPDIR}/../meta-fsl-arm \
-             ${TOPDIR}/../meta-fsl-arm-extra \
-             ${TOPDIR}/../meta-telephony \
+             ${TOPDIR}/../poky-krogoth/meta \
+             ${TOPDIR}/../poky-krogoth/meta-poky \
+             ${TOPDIR}/../poky-krogoth/meta-b2open/meta-voip \
+             ${TOPDIR}/../poky-krogoth/meta-openembedded/meta-oe \
+             ${TOPDIR}/../poky-krogoth/meta-openembedded/meta-python \
+             ${TOPDIR}/../poky-krogoth/meta-openembedded/meta-networking \
+             ${TOPDIR}/../poky-krogoth/meta-yocto-bsp \
+             ${TOPDIR}/../poky-krogoth/meta-fsl-arm \
+             ${TOPDIR}/../poky-krogoth/meta-fsl-arm-extra \
+             ${TOPDIR}/../poky-krogoth/meta-telephony \
              "
